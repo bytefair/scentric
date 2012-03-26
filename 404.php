@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (Not Found).
  *
- * @package _s
+ * @package scentric
  * @since _s 1.0
  */
 

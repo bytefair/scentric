@@ -2,7 +2,7 @@
 /**
  * The template for displaying search forms in _s
  *
- * @package _s
+ * @package scentric
  * @since _s 1.0
  */
 ?>

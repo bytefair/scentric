@@ -2,7 +2,7 @@
 /**
  * _s functions and definitions
  *
- * @package _s
+ * @package scentric
  * @since _s 1.0
  */
 

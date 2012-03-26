@@ -7,7 +7,7 @@
  * handled by a callback to _s_comment() which is
  * located in the functions.php file.
  *
- * @package _s
+ * @package scentric
  * @since _s 1.0
  */
 ?>

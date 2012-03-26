@@ -2,7 +2,7 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package _s
+ * @package scentric
  * @since _s 1.0
  */
 ?>
