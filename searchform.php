@@ -3,11 +3,11 @@
  * The template for displaying search forms in _s
  *
  * @package scentric
- * @since _s 1.0
+ * @since Scentric 1.0
  */
 ?>
 	<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-		<label for="s" class="assistive-text"><?php _e( 'Search', '_s' ); ?></label>
-		<input type="text" class="field" name="s" id="s" placeholder="<?php esc_attr_e( 'Search &hellip;', '_s' ); ?>" />
-		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', '_s' ); ?>" />
+		<label for="s" class="assistive-text"><?php _e( 'Search', scentric ); ?></label>
+		<input type="text" class="field" name="s" id="s" placeholder="<?php esc_attr_e( 'Search &hellip;', scentric ); ?>" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', scentric ); ?>" />
 	</form>

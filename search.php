@@ -3,7 +3,7 @@
  * The template for displaying Search Results pages.
  *
  * @package scentric
- * @since _s 1.0
+ * @since Scentric 1.0
  */
 
 get_header(); ?>
@@ -14,10 +14,10 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', '_s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', scentric ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				</header>
 
-				<?php _s_content_nav( 'nav-above' ); ?>
+				<?php scentric_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -26,17 +26,17 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php _s_content_nav( 'nav-below' ); ?>
+				<?php scentric_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', '_s' ); ?></h1>
+						<h1 class="entry-title"><?php _e( 'Nothing Found', scentric ); ?></h1>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', '_s' ); ?></p>
+						<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', scentric ); ?></p>
 						<?php get_search_form(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->

@@ -8,7 +8,7 @@
  * different template.
  *
  * @package scentric
- * @since _s 1.0
+ * @since Scentric 1.0
  */
 
 get_header(); ?>
