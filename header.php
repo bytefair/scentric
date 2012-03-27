@@ -44,14 +44,14 @@
 		echo ' | ' . sprintf( __( 'Page %s', scentric ), max( $paged, $page ) );
 
 	?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 
 <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
-<script src="<?php bloginfo('template_directory') ?>/js/libs/modernizr-2.5.3.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.5.3.min.js"></script>
 
 
 
