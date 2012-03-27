@@ -36,10 +36,10 @@ Features from the original theme documentation:
 
 ## Components
 
-[Normalize.css](http://necolas.github.com/normalize.css/)
-[HTML5 Boilerplate](http://html5boilerplate.com)
-[_s WordPress theme](https://github.com/Automattic/_s)
-[Rainbow.js](http://craig.is/making/rainbows)
+* [Normalize.css](http://necolas.github.com/normalize.css/)
+* [HTML5 Boilerplate](http://html5boilerplate.com)
+* [_s WordPress theme](https://github.com/Automattic/_s)
+* [Rainbow.js](http://craig.is/making/rainbows)
 
 ## License
 
