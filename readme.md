@@ -4,9 +4,15 @@
 
 ### How to Start Developing with Scentric
 
-1. Scentric is useable as a parent theme, but it's easier to edit it directly.
-2. If you want code highlighting, look at the settings in style.css for Rainbow code colors. If you don't need it, remove those styles and also the Rainbow plugin from plugins.js.
-3. Profit?
+__Getting Started__
+
+1. Scentric is not suitable for parent theming, it is meant to be updated directly.
+
+__Customizing JavaScript__
+
+1. If you want code highlighting, look at the settings in style.css for Rainbow code colors. If you don't need it, remove those styles and also the Rainbow plugin from plugins.js. It's only 1.2K.
+2. All scripts are loaded from scentric_scripts() in functions.php. Modernizr is loaded in the head, jQuery is loaded the default way, and js/plugins.js and js/scripts.js are loaded in the footer. If want to use something else, change it here.
+3. jQuery plugins go into plugins.js and custom scripts go in scripts.js.
 
 ### Scentric Changelog
 
@@ -18,6 +24,7 @@ __v0.1__
 __v0.2__
 
 * Added Rainbow.js for code theming out of the box. Use `<code data-language="generic"></code>` to set the language type. The generic highlighter is suprisingly good for most applications and I used it as is to save space (only 1.2k!), but you can add support for specific languages. Visit the Rainbow website for more documentation, languages, and themes. This jQuery plugin is located in plugins.js
+* Moved all the Boilerplate style loading over to be handled by WordPress, like it wants.
 
 ### Features from the original theme documentation:
 
