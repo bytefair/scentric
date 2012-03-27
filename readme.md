@@ -2,7 +2,7 @@
 
 ## Overview
 
-### Changelog__
+### Changelog
 
 __v0.1__
 
