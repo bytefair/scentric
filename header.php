@@ -57,6 +57,7 @@
 
 <!-- begin wp_head() code -->
 <?php wp_head(); ?>
+<!-- end wp_head() code -->
 
 </head>
 
