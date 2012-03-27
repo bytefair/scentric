@@ -29,8 +29,8 @@ Features from the original theme documentation:
 
 ## Planned Additions
 
-* syntax highlighting for posting code via Rainbow
-* vertical and horitzontal grid guides defined by developer
+* total cleanup of the _s code to remove unneeded styles
+* vertical and horitzontal grid guides defined by you
 * semantic grid using less?
 * pulling in additional useful PHP into functions.php
 
