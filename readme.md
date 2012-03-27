@@ -21,7 +21,8 @@ From the original theme documentation:
 
 ## Components
 
-HTML5 Boilerplate 
+Normalize.css
+HTML5 Boilerplate
 
 ## License
 
