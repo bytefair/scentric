@@ -21,7 +21,7 @@ From the original theme documentation:
 
 ## Planned Additions
 
-* syntax highlighting for posting code
+* syntax highlighting for posting code via Rainbow
 * vertical and horitzontal grid guides defined by developer
 * semantic grid using less?
 * pulling in additional useful PHP into functions.php
@@ -30,6 +30,7 @@ From the original theme documentation:
 
 Normalize.css
 HTML5 Boilerplate
+_s WordPress theme
 
 ## License
 
