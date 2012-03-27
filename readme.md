@@ -2,10 +2,18 @@
 
 ## Overview
 
+### Changelog__
+
+__v0.1__
+
 * Switched the reset from Blueprint's to Normalize.css, which is superior for developer tools and arguably for developers too
 * Switched some of the header elements over to Boilerplate style and CSS style as well as fixing most CSS collisions
 
-From the original theme documentation:
+__v0.2__
+
+* Added Rainbow.js for code theming out of the box. Use `<code data-language=""></code>` to set the language type. Built in types are `generic`, `javascript`, `html`, and `css`. Visit the Rainbow website for more documentation, languages, and themes. This jQuery plugin is located in plugins.js
+
+Features from the original theme documentation:
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.
@@ -28,9 +36,10 @@ From the original theme documentation:
 
 ## Components
 
-Normalize.css
-HTML5 Boilerplate
-_s WordPress theme
+[Normalize.css](http://necolas.github.com/normalize.css/)
+[HTML5 Boilerplate](http://html5boilerplate.com)
+[_s WordPress theme](https://github.com/Automattic/_s)
+[Rainbow.js](http://craig.is/making/rainbows)
 
 ## License
 
