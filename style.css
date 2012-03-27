@@ -82,9 +82,9 @@ audio:not([controls]) {
  */
 
 html {
-    font-size: 100%; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; /* 2 */
+    font-size: 62.5%%; /* 1 */
+    -webkit-text-size-adjust: 62.5%; /* 2 */
+    -ms-text-size-adjust: 62.5%; /* 2 */
 }
 
 /*
@@ -302,7 +302,7 @@ ul {
 }
 
 dd {
-    margin: 0 0 0 40px;
+    margin: 0;
 }
 
 /*
@@ -312,7 +312,7 @@ dd {
 menu,
 ol,
 ul {
-    padding: 0 0 0 40px;
+    padding: 0;
 }
 
 /*
