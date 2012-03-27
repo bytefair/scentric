@@ -3,8 +3,7 @@
 ## Overview
 
 * Switched the reset from Blueprint's to Normalize.css, which is superior for developer tools and arguably for developers too
-* Switched some of the header elements over to Boilerplate style and CSS style as well
-
+* Switched some of the header elements over to Boilerplate style and CSS style as well as fixing most CSS collisions
 
 From the original theme documentation:
 
@@ -19,6 +18,13 @@ From the original theme documentation:
 * 5 sample CSS layouts in /layouts: Two sidebars on the left, two sidebars on the right, a sidebar on either side of your content, and two-column layouts with sidebars on either side.
 * Smartly organized starter CSS in style.css that will help you to quickly get your design off the ground.
 * The GPL license in license.txt. :) Use it to make something cool.
+
+## Planned Additions
+
+* syntax highlighting for posting code
+* vertical and horitzontal grid guides defined by developer
+* semantic grid using less?
+* pulling in additional useful PHP into functions.php
 
 ## Components
 
