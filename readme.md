@@ -2,7 +2,13 @@
 
 ## Overview
 
-### Changelog
+### How to Start Developing with Scentric
+
+1. Scentric is useable as a parent theme, but it's easier to edit it directly.
+2. If you want code highlighting, look at the settings in style.css for Rainbow code colors. If you don't need it, remove those styles and also the Rainbow plugin from plugins.js.
+3. Profit?
+
+### Scentric Changelog
 
 __v0.1__
 
@@ -13,7 +19,7 @@ __v0.2__
 
 * Added Rainbow.js for code theming out of the box. Use `<code data-language="generic"></code>` to set the language type. The generic highlighter is suprisingly good for most applications and I used it as is to save space (only 1.2k!), but you can add support for specific languages. Visit the Rainbow website for more documentation, languages, and themes. This jQuery plugin is located in plugins.js
 
-Features from the original theme documentation:
+### Features from the original theme documentation:
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.
