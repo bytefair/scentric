@@ -11,7 +11,7 @@ __v0.1__
 
 __v0.2__
 
-* Added Rainbow.js for code theming out of the box. Use `<code data-language=""></code>` to set the language type. Built in types are `generic`, `javascript`, `html`, and `css`. Visit the Rainbow website for more documentation, languages, and themes. This jQuery plugin is located in plugins.js
+* Added Rainbow.js for code theming out of the box. Use `<code data-language="generic"></code>` to set the language type. The generic highlighter is suprisingly good for most applications and I used it as is to save space (only 1.2k!), but you can add support for specific languages. Visit the Rainbow website for more documentation, languages, and themes. This jQuery plugin is located in plugins.js
 
 Features from the original theme documentation:
 
