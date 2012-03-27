@@ -3,6 +3,7 @@
 ## Overview
 
 * Switched the reset from Blueprint's to Normalize.css, which is superior for developer tools and arguably for developers too
+* Switched some of the header elements over to Boilerplate style
 
 
 From the original theme documentation:
