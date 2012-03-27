@@ -7,11 +7,22 @@
  * @package scentric
  * @since Scentric 1.0
  */
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+?>
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+
+<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="viewport" content="width=device-width">
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -35,11 +46,18 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
 
+
+<!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+<script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+
+
+<!-- begin wp_head() code -->
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -59,4 +77,4 @@
 		</nav>
 	</header><!-- #masthead .site-header -->
 
-	<div id="main">
+	<div id="main" role="main">
