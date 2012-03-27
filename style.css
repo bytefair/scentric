@@ -376,7 +376,7 @@ form {
 }
 
 /*
- * Define consistent border, margin, and padding
+ * Def`ine consistent border, margin, and padding
  */
 
 fieldset {
@@ -408,7 +408,7 @@ button,
 input,
 select,
 textarea {
-    font-size: 100%; /* 1 */
+    font-size: 62.5%; /* 1 */ /* changed default font size to 10 px as _s does */
     margin: 0; /* 2 */
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
