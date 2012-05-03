@@ -54,15 +54,15 @@ function scentric_setup() {
 	 */
 	load_theme_textdomain( scentric, get_template_directory() . '/languages' );
 
-	$locale = get_locale();
-	$locale_file = get_template_directory() . "/languages/$locale.php";
-	if ( is_readable( $locale_file ) )
-		require_once( $locale_file );
-
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
 	add_theme_support( 'automatic-feed-links' );
+
+	/**
+	 * Enable support for Post Thumbnails
+	 */
+	add_theme_support( 'post-thumbnails' );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -72,7 +72,7 @@ function scentric_setup() {
 	) );
 
 	/**
-	 * Add support for the Aside and Gallery Post Formats
+	 * Add support for the Aside Post Formats
 	 */
 	add_theme_support( 'post-formats', array( 'aside', ) );
 }
