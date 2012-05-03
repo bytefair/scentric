@@ -26,6 +26,10 @@ __v0.2__
 * Added Rainbow.js for code theming out of the box. This jQuery plugin is located in plugins.js
 * Moved all the Boilerplate style loading over to be handled by WordPress, like it wants.
 
+__v0.3__
+
+* Many small bugfixes including fixing the buttons and input sizing from _s defaults.
+
 ## Features from the original _s theme:
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
