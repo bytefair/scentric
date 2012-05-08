@@ -2,6 +2,12 @@
 
 ## Overview
 
+Scentric is a responsive development system for Wordpress sites or blogs that is based on Automattic's _s theme, which is a starter theme meant for hardcore themers and CSS artists. I strongly disagree with some of the choices they have made with the foundations of _s, so I replaced the foundations of _s with Normalize.css and the helper classes from HTML5 Boilerplate. I think this makes Scentric a much saner place to begin theming for people who code using developer tools in their browsers.
+
+I also am adding cool new features for coder-types like fancy code highlighting for technical bloggers, a customizable development grid overlay, useful custom WP functions, and possibly more. I want this to become a theme that has everything you'd want for WP theming and nothing you don't.
+
+Please submit patches on Github if you find bugs or would like to make improvements.
+
 ## How to Start Developing with Scentric
 
 ### Getting Started
@@ -10,7 +16,7 @@
 
 ### Customizing JavaScript
 
-1. If you want code highlighting, look at the settings in style.css for Rainbow code colors. If you don't need it, remove those styles and also the Rainbow plugin from plugins.js. It's only 1.2K. Use `<code data-language="generic"></code>` to set the language type. The generic highlighter is suprisingly good for most applications and I used it as is to save space, but you can add support for specific languages. Visit the Rainbow website for more documentation, languages, and themes.
+1. If you want code highlighting, look at the settings in style.css for Rainbow code colors. If you don't need it, remove those styles and also the Rainbow plugin from plugins.js. It's only 1.2K. Use `<code data-language="generic"></code>` to set the language type. The generic highlighter is suprisingly good for most applications and I used it as is to save space, but you can add support for specific languages. Visit the Rainbow website for more documentation, languages, and themes. If you post a lot of code, it's worth customizing this.
 2. All scripts are loaded from scentric_scripts() in functions.php. Modernizr is loaded in the head, jQuery is loaded the default way, and js/plugins.js and js/scripts.js are loaded in the footer. If want to use something else, change it here.
 3. jQuery plugins go into plugins.js and custom scripts go in scripts.js.
 
