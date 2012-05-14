@@ -40,6 +40,10 @@ __v0.4__
 
 * Brought in tons of bugfixes from _s 1.1
 
+__v0.5__
+
+* Updated content.php and removed Google Analytics snippet from footer.php
+
 ## Features from the original _s theme:
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
