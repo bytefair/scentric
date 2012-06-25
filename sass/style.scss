@@ -1,0 +1,28 @@
+/*
+Theme Name: Scentric
+Theme URI: http://github.com/bytefair/scentric
+Author: Paul Edmon Graham
+Author URI: http://automattic.com/
+Description: I'm Scentric, a responsive development framework for Wordpress
+Version: 0.7
+License: GNU General Public License
+License URI: license.txt
+Tags:
+
+Normalize.css replaces Blueprint reset
+
+*/
+
+// default styling for Scentric
+@import "normalize"; // normalize.css for a reset
+@import "wp-styles"; // theme's base styles, usually you want to keep this as-is
+@import "rainbow"; // styles that Rainbow.js uses for syntax coloring
+
+// optional sample layouts in layouts folder
+// e.g. @import "layouts/content-sidebar";
+
+// primary styles go below this line
+
+
+// non-semantic helper classes from HTML5 Boilerplate
+@import "helpers";

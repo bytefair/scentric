@@ -44,6 +44,10 @@ __v0.5__
 
 * Updated content.php and removed Google Analytics snippet from footer.php
 
+__v0.7 (in progress)__
+
+* Switched all CSS to Compass format for easier management. Files are located in `sass/` and are compiled from `style.scss`.
+
 ## Features from the original _s theme:
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
