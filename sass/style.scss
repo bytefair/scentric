@@ -22,7 +22,9 @@ Normalize.css replaces Blueprint reset
 // e.g. @import "layouts/content-sidebar";
 
 // primary styles go below this line
-
+@import "basic";
+@import "mobile";
+@import "desktop";
 
 // non-semantic helper classes from HTML5 Boilerplate
 @import "helpers";

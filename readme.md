@@ -46,7 +46,7 @@ __v0.5__
 
 __v0.7 (in progress)__
 
-* Switched all CSS to Compass format for easier management. Files are located in `sass/` and are compiled from `style.scss`.
+* Switched all CSS to Compass format for easier management. Files are located in `sass/` and are compiled from `style.scss` to `style.css` in the root directory. I still use Normalize rather than Compass reset but that may change before 1.0.
 
 ## Features from the original _s theme:
 
