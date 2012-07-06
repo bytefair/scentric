@@ -12,11 +12,13 @@ Tags:
 Normalize.css replaces Blueprint reset
 
 */
+// compass imports go here
+@import "compass";
 
 // default styling for Scentric
-@import "normalize"; // normalize.css for a reset
-@import "wp-styles"; // theme's base styles, usually you want to keep this as-is
-@import "rainbow"; // styles that Rainbow.js uses for syntax coloring
+@import "partials/normalize"; // normalize.css for a reset
+@import "partials/wp-styles"; // theme's base styles, usually you want to keep this as-is
+@import "partials/rainbow"; // styles that Rainbow.js uses for syntax coloring
 
 // optional sample layouts in layouts folder
 // e.g. @import "layouts/content-sidebar";
@@ -27,4 +29,4 @@ Normalize.css replaces Blueprint reset
 @import "desktop";
 
 // non-semantic helper classes from HTML5 Boilerplate
-@import "helpers";
+@import "partials/helpers";
