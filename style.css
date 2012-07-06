@@ -1,57 +1,899 @@
 /*
-Syntax error: File to import not found or unreadable: basic.
-              Load paths:
-                /Users/paul/Documents/code/wordpress/scentric/sass
-                /Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets
-                /Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 25 of /Users/paul/Documents/code/wordpress/scentric/sass/style.scss
+Theme Name: Scentric
+Theme URI: http://github.com/bytefair/scentric
+Author: Paul Edmon Graham
+Author URI: http://bytefair.com/
+Description: I'm Scentric, a responsive development framework for Wordpress
+Version: 0.7
+License: GNU General Public License
+License URI: license.txt
+Tags:
 
-Backtrace:
-/Users/paul/Documents/code/wordpress/scentric/sass/style.scss:25
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/import_node.rb:64:in `import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/import_node.rb:25:in `imported_file'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:149:in `visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/engine.rb:300:in `_render'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../../scss/lib/sass/../sass/engine.rb:247:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:140:in `compile'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:126:in `timed'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:139:in `compile'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/logger.rb:45:in `red'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:138:in `compile'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:118:in `compile_if_required'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:103:in `run'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:101:in `each'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:101:in `run'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:126:in `timed'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/compiler.rb:100:in `run'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/commands/update_project.rb:45:in `perform'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/commands/base.rb:18:in `execute'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/../lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/compass:40
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/compass:54:in `call'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/compass:54
+Normalize.css replaces Blueprint reset
+
 */
-body:before {
+/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/* line 3, sass/partials/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+/* line 6, sass/partials/_normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 12, sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 17, sass/partials/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* line 19, sass/partials/_normalize.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 25, sass/partials/_normalize.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+/* line 27, sass/partials/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 29, sass/partials/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/* line 31, sass/partials/_normalize.scss */
+a:hover, a:active {
+  outline: 0; }
+
+/* line 33, sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 38, sass/partials/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+/* line 43, sass/partials/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+/* line 48, sass/partials/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+/* line 53, sass/partials/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+/* line 58, sass/partials/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+/* line 63, sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 65, sass/partials/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 67, sass/partials/_normalize.scss */
+blockquote {
+  margin: 1.5em; }
+
+/* line 69, sass/partials/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 71, sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 76, sass/partials/_normalize.scss */
+p, pre {
+  margin: 1.5em 0; }
+
+/* line 78, sass/partials/_normalize.scss */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/* line 84, sass/partials/_normalize.scss */
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: basic.\A               Load paths:\A                 /Users/paul/Documents/code/wordpress/scentric/sass\A                 /Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets\A                 /Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 25 of /Users/paul/Documents/code/wordpress/scentric/sass/style.scss"; }
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 90, sass/partials/_normalize.scss */
+q {
+  quotes: none; }
+
+/* line 93, sass/partials/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* line 98, sass/partials/_normalize.scss */
+dl, menu, ol, ul {
+  margin: 1.5em 0; }
+
+/* line 100, sass/partials/_normalize.scss */
+dd {
+  margin: 0; }
+
+/* line 102, sass/partials/_normalize.scss */
+menu, ol, ul {
+  padding: 0; }
+
+/* line 105, sass/partials/_normalize.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* line 110, sass/partials/_normalize.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/* line 115, sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 117, sass/partials/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* line 119, sass/partials/_normalize.scss */
+form {
+  margin: 0; }
+
+/* line 121, sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 127, sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+/* line 134, sass/partials/_normalize.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+/* line 141, sass/partials/_normalize.scss */
+button, input {
+  line-height: normal; }
+
+/* line 143, sass/partials/_normalize.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible; }
+
+/* line 149, sass/partials/_normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default; }
+
+/* line 151, sass/partials/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+/* line 158, sass/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 166, sass/partials/_normalize.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+/* line 171, sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 176, sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* line 181, sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+/* line 195, sass/partials/_normalize.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0; }
+
+/* ==|== WordPress default style ===============================================
+   These styles are from _s originally, there are mostly styles to set up
+   default WordPress styles. I have left most of them in, but have edited
+   some of the choices where appropriate
+   ========================================================================== */
+/* =Global
+----------------------------------------------- */
+/* line 14, sass/partials/_wp-styles.scss */
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: sans-serif; }
+
+/* Headings */
+/* line 20, sass/partials/_wp-styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both; }
+
+/* line 23, sass/partials/_wp-styles.scss */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+/* Text elements */
+/* line 31, sass/partials/_wp-styles.scss */
+p {
+  margin-bottom: 1.5em; }
+
+/* line 34, sass/partials/_wp-styles.scss */
+ul, ol {
+  margin: 0 0 1.5em 1.5em; }
+
+/* line 37, sass/partials/_wp-styles.scss */
+ul {
+  list-style: disc; }
+
+/* line 40, sass/partials/_wp-styles.scss */
+ol {
+  list-style: decimal; }
+
+/* line 43, sass/partials/_wp-styles.scss */
+ul ul, ol ol, ul ol, ol ul {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+/* line 47, sass/partials/_wp-styles.scss */
+dt {
+  font-weight: bold; }
+
+/* line 50, sass/partials/_wp-styles.scss */
+dd {
+  margin: 0 1.5em 1.5em; }
+
+/* line 53, sass/partials/_wp-styles.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 56, sass/partials/_wp-styles.scss */
+dfn, cite, em, i {
+  font-style: italic; }
+
+/* line 59, sass/partials/_wp-styles.scss */
+blockquote {
+  margin: 0 1.5em; }
+
+/* line 62, sass/partials/_wp-styles.scss */
+address {
+  margin: 0 0 1.5em; }
+
+/* line 65, sass/partials/_wp-styles.scss */
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  overflow: auto;
+  max-width: 100%; }
+
+/* line 71, sass/partials/_wp-styles.scss */
+code, kbd, tt, var {
+  font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+
+/* line 74, sass/partials/_wp-styles.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+/* line 78, sass/partials/_wp-styles.scss */
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+/* line 83, sass/partials/_wp-styles.scss */
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 90, sass/partials/_wp-styles.scss */
+sup {
+  bottom: 1ex; }
+
+/* line 93, sass/partials/_wp-styles.scss */
+sub {
+  top: .5ex; }
+
+/* line 96, sass/partials/_wp-styles.scss */
+small {
+  font-size: 75%; }
+
+/* line 99, sass/partials/_wp-styles.scss */
+big {
+  font-size: 125%; }
+
+/* line 102, sass/partials/_wp-styles.scss */
+figure {
+  margin: 0; }
+
+/* line 105, sass/partials/_wp-styles.scss */
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+/* line 109, sass/partials/_wp-styles.scss */
+th {
+  font-weight: bold; }
+
+/* line 115, sass/partials/_wp-styles.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */ }
+
+/* line 122, sass/partials/_wp-styles.scss */
+button,
+input {
+  line-height: normal;
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+  *overflow: visible;
+  /* Corrects inner spacing displayed oddly in IE6/7 */ }
+
+/* line 129, sass/partials/_wp-styles.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid #ccc;
+  border-color: #ccc #ccc #bbb #ccc;
+  border-radius: 3px;
+  background: #fafafa;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fafafa 60%, #e6e6e6 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #fafafa), color-stop(100%, #e6e6e6));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fafafa 60%, #e6e6e6 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fafafa 60%, #e6e6e6 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fafafa 60%, #e6e6e6 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #fafafa 60%, #e6e6e6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#e6e6e6',GradientType=0 );
+  /* IE6-9 */
+  box-shadow: inset 0 2px 1px #fff;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  padding: 0.7em 0.9375em 0.55em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+
+/* line 154, sass/partials/_wp-styles.scss */
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background: #f5f5f5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f5f5f5), color-stop(100%, #dcdcdc));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#dcdcdc',GradientType=0 );
+  /* IE6-9 */
+  border-color: #bbb #bbb #aaa #bbb; }
+
+/* line 172, sass/partials/_wp-styles.scss */
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  border-color: #aaa #bbb #bbb #bbb;
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15); }
+
+/* line 178, sass/partials/_wp-styles.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* Addresses box sizing set to content-box in IE8/9 */
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */ }
+
+/* line 182, sass/partials/_wp-styles.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  box-sizing: content-box; }
+
+/* line 188, sass/partials/_wp-styles.scss */
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none; }
+
+/* line 192, sass/partials/_wp-styles.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0; }
+
+/* line 197, sass/partials/_wp-styles.scss */
+input[type=text],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+
+/* line 203, sass/partials/_wp-styles.scss */
+input[type=text]:focus,
+textarea:focus {
+  color: #111; }
+
+/* line 206, sass/partials/_wp-styles.scss */
+input[type=text] {
+  padding: 3px; }
+
+/* line 209, sass/partials/_wp-styles.scss */
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 98%; }
+
+/* Links */
+/* line 217, sass/partials/_wp-styles.scss */
+a {
+  color: royalblue; }
+
+/* line 220, sass/partials/_wp-styles.scss */
+a:visited {
+  color: purple; }
+
+/* line 225, sass/partials/_wp-styles.scss */
+a:hover,
+a:focus,
+a:active {
+  color: midnightblue; }
+
+/* Alignment */
+/* line 230, sass/partials/_wp-styles.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+/* line 235, sass/partials/_wp-styles.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+/* line 240, sass/partials/_wp-styles.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+/* Text meant only for screen readers */
+/* line 247, sass/partials/_wp-styles.scss */
+.assistive-text {
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+/* =Content
+----------------------------------------------- */
+/* line 259, sass/partials/_wp-styles.scss */
+.hentry {
+  margin: 0 0 1.5em; }
+
+/* line 262, sass/partials/_wp-styles.scss */
+.entry-meta {
+  clear: both; }
+
+/* line 265, sass/partials/_wp-styles.scss */
+.byline {
+  display: none; }
+
+/* line 269, sass/partials/_wp-styles.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+/* line 273, sass/partials/_wp-styles.scss */
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+/* line 276, sass/partials/_wp-styles.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/* =Asides
+----------------------------------------------- */
+/* line 286, sass/partials/_wp-styles.scss */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/* =Media
+----------------------------------------------- */
+/* line 297, sass/partials/_wp-styles.scss */
+.site-header img,
+.entry-content img,
+.comment-content img,
+.widget img {
+  max-width: 100%;
+  /* Fluid images for posts, comments, and widgets */ }
+
+/* line 303, sass/partials/_wp-styles.scss */
+.site-header img,
+.entry-content img,
+img[class*="align"],
+img[class*="wp-image-"] {
+  height: auto;
+  /* Make sure images with WordPress-added height and width attributes are scaled correctly */ }
+
+/* line 308, sass/partials/_wp-styles.scss */
+.site-header img,
+.entry-content img,
+img.size-full {
+  max-width: 100%;
+  width: auto;
+  /* Prevent stretching of full-size images with height and width attributes in IE8 */ }
+
+/* line 313, sass/partials/_wp-styles.scss */
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* line 319, sass/partials/_wp-styles.scss */
+.wp-caption {
+  border: 1px solid #ccc;
+  max-width: 100%; }
+
+/* line 325, sass/partials/_wp-styles.scss */
+.wp-caption.aligncenter,
+.wp-caption.alignleft,
+.wp-caption.alignright {
+  margin-bottom: 1.5em; }
+
+/* line 328, sass/partials/_wp-styles.scss */
+.wp-caption img {
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%; }
+
+/* line 333, sass/partials/_wp-styles.scss */
+.wp-caption-text {
+  text-align: center; }
+
+/* line 336, sass/partials/_wp-styles.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0; }
+
+/* line 339, sass/partials/_wp-styles.scss */
+#content .gallery {
+  margin-bottom: 1.5em; }
+
+/* line 344, sass/partials/_wp-styles.scss */
+#content .gallery a img {
+  border: none;
+  height: auto;
+  max-width: 90%; }
+
+/* line 349, sass/partials/_wp-styles.scss */
+#content .gallery dd {
+  margin: 0; }
+
+/* Make sure embeds and iframes fit their containers */
+/* line 360, sass/partials/_wp-styles.scss */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/* =Navigation
+----------------------------------------------- */
+/* line 368, sass/partials/_wp-styles.scss */
+#content .site-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
+
+/* line 372, sass/partials/_wp-styles.scss */
+#content .nav-previous {
+  float: left;
+  width: 50%; }
+
+/* line 376, sass/partials/_wp-styles.scss */
+#content .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+/* =Comments
+----------------------------------------------- */
+/* =Widgets
+----------------------------------------------- */
+/* line 391, sass/partials/_wp-styles.scss */
+.widget {
+  margin: 0 0 1.5em; }
+
+/* Search widget */
+/* line 396, sass/partials/_wp-styles.scss */
+#searchsubmit {
+  display: none; }
+
+/* ==|== Starter theme for Rainbow.js ==========================================
+   Put your styles for Rainbow.js here
+   ========================================================================== */
+/**
+ * Blackboard theme
+ *
+ * @author Domenico Carbotta
+ * @version 1.0
+ */
+/* line 12, sass/partials/_rainbow.scss */
+pre {
+  background: #0B1022;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  color: #fff; }
+
+/* line 22, sass/partials/_rainbow.scss */
+pre .comment {
+  color: #727272; }
+
+/* line 26, sass/partials/_rainbow.scss */
+pre .constant, pre .integer {
+  color: #D8FA3C; }
+
+/* line 30, sass/partials/_rainbow.scss */
+pre .storage {
+  color: #FBDE2D; }
+
+/* line 34, sass/partials/_rainbow.scss */
+pre .string {
+  color: #61CE3C; }
+
+/* line 38, sass/partials/_rainbow.scss */
+pre .keyword, pre .selector {
+  color: #FBDE2D; }
+
+/* line 42, sass/partials/_rainbow.scss */
+pre .parent {
+  font-style: italic; }
+
+/* line 46, sass/partials/_rainbow.scss */
+pre .entity, pre .meta {
+  color: #FF6400; }
+
+/* line 50, sass/partials/_rainbow.scss */
+pre .support {
+  color: #8DA6CE; }
+
+/* line 54, sass/partials/_rainbow.scss */
+pre .variable.global, pre .variable.class, pre .variable.instance {
+  color: #FF6400; }
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+/* line 6, sass/partials/_helpers.scss */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+/* line 7, sass/partials/_helpers.scss */
+.ir br {
+  display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+/* line 10, sass/partials/_helpers.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+/* line 13, sass/partials/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+/* line 16, sass/partials/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 19, sass/partials/_helpers.scss */
+.invisible {
+  visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+/* line 22, sass/partials/_helpers.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+/* line 23, sass/partials/_helpers.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 24, sass/partials/_helpers.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 34, sass/partials/_helpers.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 35, sass/partials/_helpers.scss */
+  a, a:visited {
+    text-decoration: underline; }
+
+  /* line 36, sass/partials/_helpers.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 37, sass/partials/_helpers.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /* line 38, sass/partials/_helpers.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 39, sass/partials/_helpers.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 40, sass/partials/_helpers.scss */
+  thead {
+    display: table-header-group; }
+
+  /* h5bp.com/t */
+  /* line 41, sass/partials/_helpers.scss */
+  tr, img {
+    page-break-inside: avoid; }
+
+  /* line 42, sass/partials/_helpers.scss */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  /* line 44, sass/partials/_helpers.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 45, sass/partials/_helpers.scss */
+  h2, h3 {
+    page-break-after: avoid; } }
