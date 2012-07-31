@@ -5,7 +5,7 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package scentric
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 
 get_header(); ?>

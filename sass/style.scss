@@ -16,8 +16,8 @@ Normalize.css replaces Blueprint reset
 @import "compass";
 
 // default styling for Scentric
-@import "partials/normalize"; // normalize.css for a reset
-// @import "compass/reset";   // I want my default reset!
+// @import "partials/normalize"; // normalize.css for a reset
+@import "compass/reset";   // I want my default reset!
 @import "partials/wp-styles"; // Default styles from _s theme
 
 // You must leave this file last on your stylesheets if you want to use these classes. They are failsafes from HTML5 Boilerplate for printing, etc.

@@ -3,7 +3,7 @@
  * The template used for displaying page content in page.php
  *
  * @package scentric
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 ?>
 

@@ -5,13 +5,13 @@
  * Eventually, some of the functionality here could be replaced by core features
  *
  * @package scentric
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  *
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 function scentric_page_menu_args( $args ) {
 	$args['show_home'] = true;
@@ -22,7 +22,7 @@ add_filter( 'wp_page_menu_args', 'scentric_page_menu_args' );
 /**
  * Adds custom classes to the array of body classes.
  *
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 function scentric_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author
@@ -37,7 +37,7 @@ add_filter( 'body_class', 'scentric_body_classes' );
 /**
  * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
  *
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 function scentric_enhanced_image_navigation( $url, $id ) {
 	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )

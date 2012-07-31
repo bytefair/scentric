@@ -3,7 +3,7 @@
  * WordPress.com-specific functions and definitions
  *
  * @package scentric
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 
 global $themecolors;
@@ -12,7 +12,7 @@ global $themecolors;
  * Set a default theme color array for WP.com.
  *
  * @global array $themecolors
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 $themecolors = array(
 	'bg' => '',

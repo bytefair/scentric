@@ -3,7 +3,7 @@
  * The template for displaying search forms in _s
  *
  * @package scentric
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 ?>
 	<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">

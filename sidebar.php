@@ -3,7 +3,7 @@
  * The Sidebar containing the main widget areas.
  *
  * @package scentric
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 ?>
 		<div id="secondary" class="widget-area" role="complementary">

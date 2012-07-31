@@ -3,7 +3,7 @@
  * The template for displaying image attachments.
  *
  * @package scentric
- * @since Scentric 1.0
+ * @since Scentric 0.1
  */
 
 get_header();
