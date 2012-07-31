@@ -48,6 +48,11 @@ __v0.7__
 
 * Switched all CSS to Compass format for easier management. Files are located in `sass/` and are compiled from `style.scss` to `style.css` in the root directory. I still use Normalize rather than Compass reset but that may change before 1.0.
 
+__v0.9__
+
+* Merging of features from mens-tk, another WP framework I was working on. I am now merging these themes.
+* Readded small-menu.js and removed rainbow.js
+
 ## Features from the original _s theme:
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
@@ -75,7 +80,6 @@ __v0.7__
 * [Normalize.css](http://necolas.github.com/normalize.css/)
 * [HTML5 Boilerplate](http://html5boilerplate.com)
 * [_s WordPress theme](https://github.com/Automattic/_s)
-* [Rainbow.js](http://craig.is/making/rainbows)
 
 ## License
 
