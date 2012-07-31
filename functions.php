@@ -50,7 +50,7 @@ function scentric_setup() {
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on _s, use a find and replace
-	 * to change scentric to the name of your theme in all the template files
+	 * to change 'scentric' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( scentric, get_template_directory() . '/languages' );
 
@@ -68,7 +68,7 @@ function scentric_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', scentric ),
+		'primary' => __( 'Primary Menu', 'scentric' ),
 	) );
 
 	/**
@@ -86,7 +86,7 @@ add_action( 'after_setup_theme', 'scentric_setup' );
  */
 function scentric_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar', scentric ),
+		'name' => __( 'Sidebar', 'scentric' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",

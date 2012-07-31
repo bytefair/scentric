@@ -40,11 +40,11 @@ get_header(); ?>
 
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'No posts to display', scentric ); ?></h1>
+						<h1 class="entry-title"><?php _e( 'No posts to display', 'scentric' ); ?></h1>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', scentric ), admin_url( 'post-new.php' ) ); ?></p>
+						<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'scentric' ), admin_url( 'post-new.php' ) ); ?></p>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
 
