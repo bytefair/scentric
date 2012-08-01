@@ -9,8 +9,6 @@
  */
 ?>
 
-	</div><!-- #main -->
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php do_action( 'scentric_credits' ); ?>
@@ -21,7 +19,9 @@
 	</footer><!-- .site-footer .site-footer -->
 </div><!-- #page .hfeed .site -->
 
+<!-- begin wp_footer() code -->
 <?php wp_footer(); ?>
+<!-- end wp_footer() code -->
 
 </body>
 </html>

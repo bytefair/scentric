@@ -15,7 +15,7 @@ textarea {
   color: #404040;
   font-family: sans-serif;
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -69,7 +69,7 @@ pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 0.9375 rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   padding: 1.6em;
@@ -151,7 +151,7 @@ input[type="submit"] {
   cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
   -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
   font-size: 12px;
-  font-size: 1.4rem;
+  font-size: 0.75 rem;
   padding: 1.12em 1.5em .88em;
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
