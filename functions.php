@@ -170,7 +170,7 @@ function scentric_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	/* loads local copy of Modernizr */
-	wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/libs/modernizr-2.6.1.js', array(),'2.6.1');
+	wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/vendor/modernizr-2.6.1.js', array(),'2.6.1');
 
 	/*
   ** replace the default jQuery call, you might want to use Google's CDN for production
