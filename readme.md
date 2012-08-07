@@ -13,6 +13,7 @@ Please submit patches on Github if you find bugs or would like to make improveme
 ### Getting Started
 
 1. Scentric is not suitable for parent theming (yet), it is meant to be updated directly.
+2. Scentric requires WP 3.4 or greater. I tend to remove deprecated functionality immediately.
 
 ### Customizing JavaScript
 
@@ -62,9 +63,7 @@ __v0.9__
 
 ## Must be finished for 1.0 release
 
-* Cleanup of all code and moving functions to proper locations.
 * Integrating of proper tweaks, etc and deleting of those files
-* Close inspection of all Sass files
 * Final sweep of all .php files in the main directory
 * Completion of screenshot.png and possibly favicon and/or Apple icons
 
