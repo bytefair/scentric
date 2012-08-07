@@ -54,6 +54,12 @@ __v0.9__
 * Readded small-menu.js and removed rainbow.js
 * Ran theme against many checks and removed deprecated function overrides and other deprecated functionality
 
+__v1.0__
+
+* Theme validates and meets all normal expectations for WP.org themes aside from post thumbnail support built in.
+* Lots of minor cleanup of the code.
+* Finally created a screenshot.png file
+
 ## Components
 
 * [Normalize.css](http://necolas.github.com/normalize.css/)
@@ -64,12 +70,10 @@ __v0.9__
 ## Must be finished for 1.0 release
 
 * Integrating of proper tweaks, etc and deleting of those files
-* Final sweep of all .php files in the main directory
-* Completion of screenshot.png and possibly favicon and/or Apple icons
 
 ## License
 
-Copyright (C) 2011 Paul Edmon Graham
+Copyright (C) 2011-2012 Paul Edmon Graham
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
