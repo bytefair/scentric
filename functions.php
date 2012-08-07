@@ -82,8 +82,8 @@ function scentric_setup() {
   */
   //add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
   add_theme_support( 'automatic-feed-links' );
+  add_editor_style(); //remember to make this sass file in the sass root
   //add_theme_support( 'post-thumbnails' );
-  //add_editor_style(); //remember to make this sass file in the sass root
 }
 endif; // scentric_setup
 add_action( 'after_setup_theme', 'scentric_setup' );
