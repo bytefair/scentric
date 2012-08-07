@@ -47,10 +47,11 @@ __v0.7__
 
 * Switched all CSS to Compass format for easier management. Files are located in `sass/` and are compiled from `style.scss` to `style.css` in the root directory. I still use Normalize rather than Compass reset but that may change before 1.0.
 
-__v0.9 (in progress)__
+__v0.9__
 
 * Merging of features from mens-tk, another WP framework I was working on. I am now merging these themes.
 * Readded small-menu.js and removed rainbow.js
+* Ran theme against many checks and removed deprecated function overrides and other deprecated functionality
 
 ## Components
 
