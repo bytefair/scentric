@@ -18,10 +18,6 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 
-<!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/i/378 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
 <meta name="viewport" content="width=device-width">
 <title><?php
 	/*
