@@ -58,11 +58,6 @@ function scentric_setup() {
 	//require( get_template_directory() . '/inc/theme-options/theme-options.php' );
 
 	/**
-	 * WordPress.com-specific functions and definitions
-	 */
-	//require( get_template_directory() . '/inc/wpcom.php' );
-
-	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on _s, use a find and replace
