@@ -54,7 +54,7 @@ __v0.9__
 * Readded small-menu.js and removed rainbow.js
 * Ran theme against many checks and removed deprecated function overrides and other deprecated functionality
 
-__v1.0 (current development)__
+__v1.0__
 
 * Theme validates and meets all normal expectations for WP.org themes aside from post thumbnail support built in.
 * Lots of minor cleanup of the code.
@@ -66,10 +66,6 @@ __v1.0 (current development)__
 * [HTML5 Boilerplate](http://html5boilerplate.com)
 * [_s WordPress theme](https://github.com/Automattic/_s)
 * [Sass](http://sass-lang.com) & [Compass](http://compass-style.org)
-
-## Must be finished for 1.0 release
-
-* Integrating of proper tweaks, etc and deleting of those files
 
 ## License
 
