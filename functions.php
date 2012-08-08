@@ -210,8 +210,5 @@ require 'inc/custom-types.php';
 //add_post_type( 'singular noun', array( 'taxonomies' => array() ) );
 //add_taxonomy( 'taxon', 'singular_noun', array( 'hierarchical' => true ) ); //remember to use machine name
 
-// used in content.php
-require 'inc/display.php';
-
 
 ?>
