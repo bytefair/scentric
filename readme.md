@@ -54,7 +54,7 @@ __v0.9__
 * Readded small-menu.js and removed rainbow.js
 * Ran theme against many checks and removed deprecated function overrides and other deprecated functionality
 
-__v1.0__
+__v1.0 (current development)s__
 
 * Theme validates and meets all normal expectations for WP.org themes aside from post thumbnail support built in.
 * Lots of minor cleanup of the code.
