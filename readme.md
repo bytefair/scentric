@@ -31,9 +31,10 @@ Please submit patches on Github at bytefair/scentric if you find bugs or would l
 3. [Set up your basic JS stack](#customizing-js).
 4. Install the testing tools [located here on the WP codex](http://codex.wordpress.org/Theme_Unit_Test) and also on [this page about the Theme Reviewers team](http://make.wordpress.org/themes/about/how-to-join-wptrt/). This will assure your theme works correctly.
 5. If you want to [define custom types or taxonomies in your theme](#how-to-build-custom-post-types-or-taxonomies-with-the-scentric-custom-types-helper), use the helper class defined in inc/custom-types.php and definie those types in functions.php.
-5. Once your theme is developed and it passes your testing plugins satisfactorily, it's ready for deployment.
-6. Make sure you minimize and compress your CSS and JS. Scentric includes the development versions of the JS libraries only. You will need to include compressed ones or link to CDN versions yourself.
-7. If you use Apache, consider adding the directives in add-to-htaccess.txt to your .htaccess file.
+6. There are several dynamic widget areas, 2 in the sidebar and 4 in the footer. Disable them if you don't need them or create more. They are definied in functions.php.
+7. Once your theme is developed and it passes your testing plugins satisfactorily, it's ready for deployment.
+8. Make sure you minimize and compress your CSS and JS. Scentric includes the development versions of the JS libraries only. You will need to include compressed ones or link to CDN versions yourself.
+9. If you use Apache, consider adding the directives in add-to-htaccess.txt to your .htaccess file.
 
 ### Customizing CSS
 
@@ -53,7 +54,11 @@ Scentric utilizes Sass and Compass for organizing CSS styles. It's entirely poss
 
 ### How to Build Custom Post Types or Taxonomies with the Scentric Custom Types Helper
 
-Use
+There's nothing particularly wrong with defining custom functionality in your themes, just be aware that you will have to carry this functionality over to another theme if you want to access it from your administrative backend. You might want to consider doing this with a plugin instead.
+
+If you can handle doing it in your theme, Scentric comes with some nice helper classes for taxonomies and class types. Meta boxes have not been integrated into the helpers yet and you must create these manually for now.
+
+You define custom types and taxonomies in functions.php
 
 ## Scentric Changelog
 
@@ -98,6 +103,7 @@ __v1.0__
 ## Planned Additions
 
 * (Definitely) Include code for configuring Nginx as well as Apache.
+* (Likely) Include helper class for meta boxes in custom-types.php
 * (Maybe) Move custom types to a plugin, which is probably the way to go. In the meantime, I endorse using [Easy Custom Content Types for WordPress](http://codecanyon.net/item/easy-custom-content-types-for-wordpress/234182). I've heavily examined the code and it's of extremely high quality and uses almost entirely native WP functionality. You don't even need to keep the plugin installed once you've generated the code. If you'd like to do custom types as a plugin, use this.
 * (Maybe) Write an admin backend for custom types
 * (Maybe) Write a default template handler for custom types.

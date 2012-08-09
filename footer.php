@@ -9,6 +9,29 @@
  */
 ?>
 
+  <div id="footer-widgets" class="footer-widget-area">
+    <?php if ( is_active_sidebar( 'primary-footer-widgets' ) ) : ?>
+      <div id="primary-footer" class="footer-widget">
+        <?php dynamic_sidebar( 'primary-footer-widgets' ); ?>
+      </div>
+    <?php endif; ?>
+    <?php if ( is_active_sidebar( 'secondary-footer-widgets' ) ) : ?>
+      <div id="secondary-footer" class="footer-widget">
+        <?php dynamic_sidebar( 'secondary-footer-widgets' ); ?>
+      </div>
+    <?php endif; // end secondary-sidebar-widgets ?>
+    <?php if ( is_active_sidebar( 'tertiary-footer-widgets' ) ) : ?>
+      <div id="tertiary-footer" class="footer-widget">
+        <?php dynamic_sidebar( 'tertiary-footer-widgets' ); ?>
+      </div>
+    <?php endif; // end secondary-sidebar-widgets ?>
+    <?php if ( is_active_sidebar( 'quaternary-footer-widgets' ) ) : ?>
+      <div id="quaternary-footer" class="footer-widget">
+        <?php dynamic_sidebar( 'quaternary-footer-widgets' ); ?>
+      </div>
+    <?php endif; // end secondary-sidebar-widgets ?>
+  </div>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php do_action( 'scentric_credits' ); ?>
