@@ -30,11 +30,12 @@ Please submit patches on Github at bytefair/scentric if you find bugs or would l
 2. [Set up your basic CSS](#customizing-css) in sass/style.scss.
 3. [Set up your basic JS stack](#customizing-js).
 4. Install the testing tools [located here on the WP codex](http://codex.wordpress.org/Theme_Unit_Test) and also on [this page about the Theme Reviewers team](http://make.wordpress.org/themes/about/how-to-join-wptrt/). This will assure your theme works correctly.
-5. If you want to [define custom types or taxonomies in your theme](#how-to-build-custom-post-types-or-taxonomies-with-the-scentric-custom-types-helper), use the helper class defined in inc/custom-types.php and definie those types in functions.php.
-6. There are several dynamic widget areas, 2 in the sidebar and 4 in the footer. Disable them if you don't need them or create more. They are definied in functions.php.
-7. Once your theme is developed and it passes your testing plugins satisfactorily, it's ready for deployment.
-8. Make sure you minimize and compress your CSS and JS. Scentric includes the development versions of the JS libraries only. You will need to include compressed ones or link to CDN versions yourself.
-9. If you use Apache, consider adding the directives in add-to-htaccess.txt to your .htaccess file.
+5. If you want to [define custom types or taxonomies in your theme](#how-to-build-custom-post-types-or-taxonomies-with-the-scentric-custom-types-helper), use the helper class defined in inc/custom-types.php and define those types in functions.php. If you do not need them, consider deleting inc/custom-types.php and all references.
+6. There are several dynamic widget areas, 2 in the sidebar and 4 in the footer. Disable them if you don't need them or create more. They are definied in functions.php and called in sidebar.php and footer.php.
+7. _s has several desirable tweaks located in inc/tweaks.php. You might want to include them in functions.php. They are located in a separate file because their functionality is likely to move into core. They are disabled by default.
+8. Once your theme is developed and it passes your testing plugins satisfactorily, it's ready for deployment.
+9. Make sure you minimize and compress your CSS and JS. Scentric includes the development versions of the JS libraries only. You will need to include compressed ones or link to CDN versions yourself.
+10. If you use Apache, consider adding the directives in add-to-htaccess.txt to your .htaccess file.
 
 ### Customizing CSS
 
@@ -58,7 +59,9 @@ There's nothing particularly wrong with defining custom functionality in your th
 
 If you can handle doing it in your theme, Scentric comes with some nice helper classes for taxonomies and class types. Meta boxes have not been integrated into the helpers yet and you must create these manually for now.
 
-You define custom types and taxonomies in functions.php
+You define custom types and taxonomies in functions.php. There are examples of function calls at the bottom of this file. Scentric establishes sane defaults for most options, but you will of course want to pass in any options as an array like in the example.
+
+If you need help with custom types or taxonomies, [WordPress has an extremely informative Codex page](http://codex.wordpress.org/Post_Types) about this. If you do not need custom types, please consider deleting all the content related to them.
 
 ## Scentric Changelog
 
@@ -99,14 +102,17 @@ __v1.0__
 * Theme validates and meets all normal expectations for WP.org themes aside from post thumbnail support built in.
 * Lots of minor cleanup of the code.
 * Finally created a screenshot.png file
+* Added 4 more widget areas to footer
+* Added more informative documentation
 
 ## Planned Additions
 
 * (Definitely) Include code for configuring Nginx as well as Apache.
 * (Likely) Include helper class for meta boxes in custom-types.php
-* (Maybe) Move custom types to a plugin, which is probably the way to go. In the meantime, I endorse using [Easy Custom Content Types for WordPress](http://codecanyon.net/item/easy-custom-content-types-for-wordpress/234182). I've heavily examined the code and it's of extremely high quality and uses almost entirely native WP functionality. You don't even need to keep the plugin installed once you've generated the code. If you'd like to do custom types as a plugin, use this.
-* (Maybe) Write an admin backend for custom types
-* (Maybe) Write a default template handler for custom types.
+* (Likely) Include several Sassified grid systems for easy responsive development. I'm not sure how I want to do this yet or which systems I should even include.
+* (Possibly) Move custom types to a plugin, which is probably the way to go. In the meantime, I endorse using [Easy Custom Content Types for WordPress](http://codecanyon.net/item/easy-custom-content-types-for-wordpress/234182). I've heavily examined the code and it's of extremely high quality and uses almost entirely native WP functionality. You don't even need to keep the plugin installed once you've generated the code. If you'd like to do custom types as a plugin, use this.
+* (Possibly) Write an admin backend for custom types
+* (Possibly) Write a default template handler for custom types.
 
 ## License
 
