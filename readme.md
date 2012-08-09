@@ -1,24 +1,49 @@
-# Scentric, a responsive development system for Wordpress
+# Scentric, a responsive-ready development system for WordPress
 
 ## Overview
 
-Scentric is a responsive development system for Wordpress sites or blogs that is based on Automattic's _s theme, which is a starter theme meant for hardcore themers and CSS artists. I strongly disagree with some of the choices they have made with the foundations of _s, so I replaced the foundations of _s with Normalize.css and the helper classes from HTML5 Boilerplate. I think this makes Scentric a much saner place to begin theming for people who code using developer tools in their browsers.
+Scentric is a development skeleton for WordPress aimed at people who want to build totally custom WP themes without writing basic content display code. Scentric is based on the _s theme from Automattic which is meant to be a modern toolkit for theme work. Scentric in particular makes it easy to replace the default reset with Normalize using Sass and Compass. Scentric also uses many elements from the HTML5 Boilerplate in its templates.
 
-I also am adding cool new features for coder-types like fancy code highlighting for technical bloggers, a customizable development grid overlay, useful custom WP functions, and possibly more. I want this to become a theme that has everything you'd want for WP theming and nothing you don't.
+One of the coolest things about Scentric is that it's totally responsive-ready. It does not include any grid systems or any assumptions about what sort of layout you might want, but it does include responsive units wherever possible as well as a full copy of Modernizr with the HTML5 shim for proper progressive enhancement.
 
-Please submit patches on Github if you find bugs or would like to make improvements.
+## Components
+
+* [Normalize.css](http://necolas.github.com/normalize.css/)
+* [HTML5 Boilerplate](http://html5boilerplate.com)
+* [_s WordPress theme](https://github.com/Automattic/_s)
+* [Sass](http://sass-lang.com) & [Compass](http://compass-style.org)
+* [Modernizr](http://modernizr.com/)
+
+Please submit patches on Github at bytefair/scentric if you find bugs or would like to make improvements.
 
 ## How to Start Developing with Scentric
 
+### Requirements
+1. WordPress 3.4 installation or highers
+2. Method to compile Compass/Sass be it the Unix tools, CodeKit, etc. __Scentric does not come with a default stylesheet out of the box.__ The stylesheet must be compiled from sass/style.scss.
+
 ### Getting Started
 
-1. Scentric is not suitable for parent theming (yet), it is meant to be updated directly.
-2. Scentric requires WP 3.4 or greater. I tend to remove deprecated functionality immediately.
+1. Scentric is not suitable for parent theming (yet), it is meant to be updated directly. There's little in here that you would need to upgrade. The JS libraries and such are self-upgradeable. Some functions may be moved to core or deprecated, but you should be dealing with that on an individual basis and checking your themes with the popular testing tools anyway.
+2. lorem
+
+### Customizing CSS
+
+lorems
 
 ### Customizing JavaScript
 
 1. All scripts are loaded from scentric_scripts() in functions.php. Modernizr is loaded in the head, jQuery is loaded the default way, and js/plugins.js and js/scripts.js are loaded in the footer. If want to use something else, change it here.
 2. jQuery plugins go into plugins.js and custom scripts go in scripts.js.
+3. If you don't need a menu, remove small-menu.js. If you don't need any JS, obviously remove all of this and the script loaders from functions.php.
+
+### How to Build Custom Post Types or Taxonomies with the Scentric Custom Types Helper
+
+lorem
+
+### Deploying a Site
+
+lorem
 
 ## Scentric Changelog
 
@@ -59,13 +84,6 @@ __v1.0__
 * Theme validates and meets all normal expectations for WP.org themes aside from post thumbnail support built in.
 * Lots of minor cleanup of the code.
 * Finally created a screenshot.png file
-
-## Components
-
-* [Normalize.css](http://necolas.github.com/normalize.css/)
-* [HTML5 Boilerplate](http://html5boilerplate.com)
-* [_s WordPress theme](https://github.com/Automattic/_s)
-* [Sass](http://sass-lang.com) & [Compass](http://compass-style.org)
 
 ## License
 
