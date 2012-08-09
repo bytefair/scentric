@@ -26,13 +26,13 @@ Please submit patches on Github at bytefair/scentric if you find bugs or would l
 ### Getting Started
 
 1. Scentric is not suitable for parent theming (yet), it is meant to be updated directly. There's little in here that you would need to upgrade. The JS libraries and such are self-upgradeable. Some functions may be moved to core or deprecated, but you should be dealing with that on an individual basis and checking your themes with the popular testing tools anyway.
-2. [Set up your basic CSS](#customize-css) in sass/style.scss.
+2. [Set up your basic CSS](#customizing-css) in sass/style.scss.
 3. Set up your basic JS stack.
 4. Install the testing tools [located here on the WP codex](http://codex.wordpress.org/Theme_Unit_Test) and also on [this page about the Theme Reviewers team](http://make.wordpress.org/themes/about/how-to-join-wptrt/). This will assure your theme works correctly.
 5. Once your theme is developed and it passes your testing plugins satisfactorily, it's ready for deployment.
 6. Make sure you minimize and compress your CSS and JS. Scentric includes the development versions of the JS libraries only. You will need to include compressed ones or link to CDN versions yourself.
 
-### <span id="customize-css">Customizing CSS</span>
+### Customizing CSS
 
 lorems
 
