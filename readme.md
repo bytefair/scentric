@@ -19,22 +19,31 @@ Please submit patches on Github at bytefair/scentric if you find bugs or would l
 ## How to Start Developing with Scentric
 
 ### Requirements
+
 1. WordPress 3.4 installation or highers
 2. Method to compile Compass/Sass be it the Unix tools, CodeKit, etc. __Scentric does not come with a default stylesheet out of the box.__ The stylesheet must be compiled from sass/style.scss.
 3. PHP 5.3
 
-### Getting Started
+### Development Steps
 
 1. Scentric is not suitable for parent theming (yet), it is meant to be updated directly. There's little in here that you would need to upgrade. The JS libraries and such are self-upgradeable. Some functions may be moved to core or deprecated, but you should be dealing with that on an individual basis and checking your themes with the popular testing tools anyway.
 2. [Set up your basic CSS](#customizing-css) in sass/style.scss.
-3. Set up your basic JS stack.
+3. [Set up your basic JS stack](#customizing-js).
 4. Install the testing tools [located here on the WP codex](http://codex.wordpress.org/Theme_Unit_Test) and also on [this page about the Theme Reviewers team](http://make.wordpress.org/themes/about/how-to-join-wptrt/). This will assure your theme works correctly.
+5. If you want to [define custom types or taxonomies in your theme](#how-to-build-custom-post-types-or-taxonomies-with-the-scentric-custom-types-helper), use the helper class defined in inc/custom-types.php and definie those types in functions.php.
 5. Once your theme is developed and it passes your testing plugins satisfactorily, it's ready for deployment.
 6. Make sure you minimize and compress your CSS and JS. Scentric includes the development versions of the JS libraries only. You will need to include compressed ones or link to CDN versions yourself.
+7. If you use Apache, consider adding the directives in add-to-htaccess.txt to your .htaccess file.
 
 ### Customizing CSS
 
-lorems
+Scentric utilizes Sass and Compass for organizing CSS styles. It's entirely possible that the helpers and such will even be rewritten in Sass entirely to make them as small as possible. For now, they are simply carved out of _s theme's styles.
+
+1. Choose whether you want to use Compass's default reset (Eric Meyer's) or Normalize.css (recommended). If you use Normalize, you will probably have to edit some of the default WP styles in sass/partials/_wp-styles.scss.
+2. Set up the way you want your CSS compiled in sass/style.scss. Editor styles are defined in sass/editor-style.scss.
+3. Boilerplate helpers are in sass/partials/_bp-helpers.scss. You probably want to keep these classes.
+4. Include your own Sass files in style.scss under the line specified in the Sass file.
+5. Compile your Sass file to generate style.css in the theme root. You will need to use the command line tools or a third party tool like Compass.app or CodeKit to do this.
 
 ### <span id="customize-js">Customizing JavaScript</span>
 
@@ -43,10 +52,6 @@ lorems
 3. If you don't need a menu, remove small-menu.js. If you don't need any JS, obviously remove all of this and the script loaders from functions.php.
 
 ### How to Build Custom Post Types or Taxonomies with the Scentric Custom Types Helper
-
-lorem
-
-### Deploying a Site
 
 lorem
 
@@ -92,6 +97,7 @@ __v1.0__
 
 ## Planned Additions
 
+* (Definitely) Include code for configuring Nginx as well as Apache.
 * (Maybe) Move custom types to a plugin, which is probably the way to go. In the meantime, I endorse using [Easy Custom Content Types for WordPress](http://codecanyon.net/item/easy-custom-content-types-for-wordpress/234182). I've heavily examined the code and it's of extremely high quality and uses almost entirely native WP functionality. You don't even need to keep the plugin installed once you've generated the code. If you'd like to do custom types as a plugin, use this.
 * (Maybe) Write an admin backend for custom types
 * (Maybe) Write a default template handler for custom types.

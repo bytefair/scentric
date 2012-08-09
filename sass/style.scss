@@ -19,5 +19,11 @@ Normalize.css replaces Blueprint reset
 @import "compass/reset";   // I want my default reset!
 @import "partials/wp-styles"; // Default styles from _s theme
 
+/*
+**
+** Place your styles below this comment
+**
+*/
+
 // You must leave this file last on your stylesheets if you want to use these classes. They are failsafes from HTML5 Boilerplate for printing, etc.
 @import "partials/bp-helpers";
