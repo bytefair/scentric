@@ -53,7 +53,7 @@ Scentric utilizes Sass and Compass for organizing CSS styles. It's entirely poss
 
 ### How to Build Custom Post Types or Taxonomies with the Scentric Custom Types Helper
 
-lorem
+Use
 
 ## Scentric Changelog
 
