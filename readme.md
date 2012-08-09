@@ -21,17 +21,22 @@ Please submit patches on Github at bytefair/scentric if you find bugs or would l
 ### Requirements
 1. WordPress 3.4 installation or highers
 2. Method to compile Compass/Sass be it the Unix tools, CodeKit, etc. __Scentric does not come with a default stylesheet out of the box.__ The stylesheet must be compiled from sass/style.scss.
+3. PHP 5.3
 
 ### Getting Started
 
 1. Scentric is not suitable for parent theming (yet), it is meant to be updated directly. There's little in here that you would need to upgrade. The JS libraries and such are self-upgradeable. Some functions may be moved to core or deprecated, but you should be dealing with that on an individual basis and checking your themes with the popular testing tools anyway.
-2. lorem
+2. [Set up your basic CSS](#customize-css) in sass/style.scss.
+3. Set up your basic JS stack.
+4. Install the testing tools [located here on the WP codex](http://codex.wordpress.org/Theme_Unit_Test) and also on [this page about the Theme Reviewers team](http://make.wordpress.org/themes/about/how-to-join-wptrt/). This will assure your theme works correctly.
+5. Once your theme is developed and it passes your testing plugins satisfactorily, it's ready for deployment.
+6. Make sure you minimize and compress your CSS and JS. Scentric includes the development versions of the JS libraries only. You will need to include compressed ones or link to CDN versions yourself.
 
-### Customizing CSS
+### <span id="customize-css">Customizing CSS</span>
 
 lorems
 
-### Customizing JavaScript
+### <span id="customize-js">Customizing JavaScript</span>
 
 1. All scripts are loaded from scentric_scripts() in functions.php. Modernizr is loaded in the head, jQuery is loaded the default way, and js/plugins.js and js/scripts.js are loaded in the footer. If want to use something else, change it here.
 2. jQuery plugins go into plugins.js and custom scripts go in scripts.js.
@@ -84,6 +89,12 @@ __v1.0__
 * Theme validates and meets all normal expectations for WP.org themes aside from post thumbnail support built in.
 * Lots of minor cleanup of the code.
 * Finally created a screenshot.png file
+
+## Planned Additions
+
+* (Maybe) Move custom types to a plugin, which is probably the way to go. In the meantime, I endorse using [Easy Custom Content Types for WordPress](http://codecanyon.net/item/easy-custom-content-types-for-wordpress/234182). I've heavily examined the code and it's of extremely high quality and uses almost entirely native WP functionality. You don't even need to keep the plugin installed once you've generated the code. If you'd like to do custom types as a plugin, use this.
+* (Maybe) Write an admin backend for custom types
+* (Maybe) Write a default template handler for custom types.
 
 ## License
 
