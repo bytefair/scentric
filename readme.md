@@ -28,7 +28,7 @@ Please submit patches on Github at bytefair/scentric if you find bugs or would l
 
 1. Scentric is not suitable for parent theming (yet), it is meant to be updated directly. There's little in here that you would need to upgrade. The JS libraries and such are self-upgradeable. Some functions may be moved to core or deprecated, but you should be dealing with that on an individual basis and checking your themes with the popular testing tools anyway.
 2. [Set up your basic CSS](#customizing-css) in sass/style.scss.
-3. [Set up your basic JS stack](#customizing-js).
+3. [Set up your basic JS stack](#customizing-javascript).
 4. Install the testing tools [located here on the WP codex](http://codex.wordpress.org/Theme_Unit_Test) and also on [this page about the Theme Reviewers team](http://make.wordpress.org/themes/about/how-to-join-wptrt/). This will assure your theme works correctly.
 5. If you want to [define custom types or taxonomies in your theme](#how-to-build-custom-post-types-or-taxonomies-with-the-scentric-custom-types-helper), use the helper class defined in inc/custom-types.php and define those types in functions.php. If you do not need them, consider deleting inc/custom-types.php and all references.
 6. There are several dynamic widget areas, 2 in the sidebar and 4 in the footer. Disable them if you don't need them or create more. They are definied in functions.php and called in sidebar.php and footer.php.
@@ -47,7 +47,7 @@ Scentric utilizes Sass and Compass for organizing CSS styles. It's entirely poss
 4. Include your own Sass files in style.scss under the line specified in the Sass file.
 5. Compile your Sass file to generate style.css in the theme root. You will need to use the command line tools or a third party tool like Compass.app or CodeKit to do this.
 
-### <span id="customize-js">Customizing JavaScript</span>
+### Customizing JavaScript
 
 1. All scripts are loaded from scentric_scripts() in functions.php. Modernizr is loaded in the head, jQuery is loaded the default way, and js/plugins.js and js/scripts.js are loaded in the footer. If want to use something else, change it here.
 2. jQuery plugins go into plugins.js and custom scripts go in scripts.js.
