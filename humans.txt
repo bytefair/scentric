@@ -11,7 +11,7 @@ Technology:
   Normalize.css 2012-07-07
   HTML 5 Boilerplate 3.0.2
   Modernizr 2.6.1
-  jQuery 1.7.2
+  jQuery 1.7.2 & 1.8.0
 
 Tools:
   _s (underscores theme)
