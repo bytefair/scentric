@@ -97,22 +97,22 @@ function add_post_type( $name, $args = array() ) {
     $args         = array_merge(
       array(
         'public'          => true,
-        'label'           => printf( "$machinename" ),
+        'label'           => sprintf( "$machinename" ),
         'supports'        => array( 'title', 'editor' ),
         'taxonomies'      => array( 'post_tag', 'category' ),
         'menu_position'   => 5,
         'labels'          => array(
-          'name'                => printf( "$upperplural" ),
-          'singular_name'       => printf( "$upper" ),
-          'all_items'           => printf( "All $upperplural" ),
-          'add_new_item'        => printf( "Add New $upper" ),
-          'edit_item'           => printf( "Edit $upper" ),
-          'new_item'            => printf( "New $upper" ),
-          'view_item'           => printf( "View $upper" ),
-          "search_items"        => printf( "Search $upperplural" ),
-          'not_found'           => printf( "No $plural found" ),
-          'not_found_in_trash'  => printf( "No $plural found in Trash" ),
-          'menu_name'           => printf( "$upperplural" )
+          'name'                => sprintf( "$upperplural" ),
+          'singular_name'       => sprintf( "$upper" ),
+          'all_items'           => sprintf( "All $upperplural" ),
+          'add_new_item'        => sprintf( "Add New $upper" ),
+          'edit_item'           => sprintf( "Edit $upper" ),
+          'new_item'            => sprintf( "New $upper" ),
+          'view_item'           => sprintf( "View $upper" ),
+          "search_items"        => sprintf( "Search $upperplural" ),
+          'not_found'           => sprintf( "No $plural found" ),
+          'not_found_in_trash'  => sprintf( "No $plural found in Trash" ),
+          'menu_name'           => sprintf( "$upperplural" )
           )
         ),
       $args
@@ -137,24 +137,24 @@ function add_taxonomy( $name, $post_type, $args = array() ) {
     $args         = array_merge(
       array(
         'public'          => true,
-        'label'           => printf( "$machinename" ),
+        'label'           => sprintf( "$machinename" ),
         'hierarchical'    => true,
         'show_tagcloud'   => false,
         'labels'          => array(
-          'name'                        => printf( "$upperplural" ),
-          'singular_name'               => printf( "$upper" ),
-          'all_items'                   => printf( "All $upperplural" ),
-          'add_new_item'                => printf( "Add New $upper" ),
-          'edit_item'                   => printf( "Edit $upper" ),
-          'new_item_name'               => printf( "Add $upper Name" ),
-          'search_items'                => printf( "Search $upperplural" ),
-          'popular_items'               => printf( "Popular $upperplural" ),
-          'parent_item'                 => printf( "Parent $upper" ),
-          'update_item'                 => printf( "Update $upper" ),
-          'seperate_items_with_commas'  => printf( "Seperate $upperplural with commas" ),
-          'add_or_remove_items'         => printf( "Add or remove $upperplural" ),
-          'choose_from_most_used'       => printf( "Choose from most used $upperplural" ),
-          'menu_name'                   => printf( "$upperplural" )
+          'name'                        => sprintf( "$upperplural" ),
+          'singular_name'               => sprintf( "$upper" ),
+          'all_items'                   => sprintf( "All $upperplural" ),
+          'add_new_item'                => sprintf( "Add New $upper" ),
+          'edit_item'                   => sprintf( "Edit $upper" ),
+          'new_item_name'               => sprintf( "Add $upper Name" ),
+          'search_items'                => sprintf( "Search $upperplural" ),
+          'popular_items'               => sprintf( "Popular $upperplural" ),
+          'parent_item'                 => sprintf( "Parent $upper" ),
+          'update_item'                 => sprintf( "Update $upper" ),
+          'seperate_items_with_commas'  => sprintf( "Seperate $upperplural with commas" ),
+          'add_or_remove_items'         => sprintf( "Add or remove $upperplural" ),
+          'choose_from_most_used'       => sprintf( "Choose from most used $upperplural" ),
+          'menu_name'                   => sprintf( "$upperplural" )
         )
       ),
       $args
