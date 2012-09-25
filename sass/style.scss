@@ -13,7 +13,8 @@ License URI: license.txt
 @import "compass";
 
 // default styling for Scentric
-// @import "partials/normalize"; // normalize.css for a reset
+// @import "partials/normalize1"; // retro normalize.css for a reset
+// @import "partials/normalize2"; // new normalize, drops legacy support
 @import "compass/reset";   // I want my default reset!
 @import "partials/wp-styles"; // Default styles from _s theme
 

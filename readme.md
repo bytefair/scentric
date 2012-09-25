@@ -114,6 +114,13 @@ __v.1.1.1__
 
 * Updated Normalize.css to v1.0
 
+__v.1.2__
+
+* Updated Normalize.css to v1.0.1
+* Added Normalize.css 2.0.1
+* Updated to jQuery 1.8.2
+* Updated to Modernizr 2.6.2
+
 ## Planned Additions
 
 * (Definitely) Include code for configuring Nginx as well as Apache.
