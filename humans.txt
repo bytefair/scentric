@@ -6,17 +6,16 @@ Author:
   paul@bytefair.com
 
 Technology:
-  WordPress 3.4
+  WordPress 3.5
   Sass 3.1.20 and Compass 0.12.2
-  Normalize.css 2012-07-07
-  HTML 5 Boilerplate 3.0.2
-  Modernizr 2.6.1
-  jQuery 1.7.2 & 1.8.0
+  Normalize.css 1 and 2
+  HTML 5 Boilerplate 4.0.2
+  Modernizr 2.6.2
+  jQuery 1.8.3
 
 Tools:
   _s (underscores theme)
   Sublime Text 2
-  CodeKit
 
 Thanks:
   Wordpress Codex

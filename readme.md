@@ -124,6 +124,11 @@ __v1.2__
 __v1.5__
 
 * Updated all the core files to reflect new code in the bases (_s theme and HTML5 Boilerplate)
+* Bumped the versions of Normalize 2 and jQuery 1.8.3
+* Added new JS code from _s
+* Reorganized Sass files and removed all _s styles
+* Now only include the print helpers from Boilerplate
+* Preperations for drastic changes in 2.0, will include many advanced Sass features like heavy use of Compass and Susy and opinionated style choices
 
 ## Planned Additions
 
