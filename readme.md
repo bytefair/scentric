@@ -123,7 +123,7 @@ __v1.2__
 
 __v1.5__
 
-* Updated all the core files to reflect new code in the bases
+* Updated all the core files to reflect new code in the bases (_s theme and HTML5 Boilerplate)
 
 ## Planned Additions
 
