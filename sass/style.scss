@@ -13,8 +13,8 @@ License URI: license.txt
 @import "compass";
 
 // default styling for Scentric
-// @import "partials/normalize1"; // retro normalize.css for a reset
-// @import "partials/normalize2"; // new normalize, drops legacy support
+// @import "vendor/normalize1"; // retro normalize.css for a reset
+// @import "vendor/normalize2"; // new normalize, drops legacy support beyond IE8
 @import "compass/reset";   // I want my Eric Meyer reset!
 
 /*
@@ -23,5 +23,5 @@ License URI: license.txt
 **
 */
 
-// You must leave this file last on your stylesheets if you want to use these classes. They are failsafes from HTML5 Boilerplate for printing, etc.
-@import "partials/bp-helpers";
+// You must leave this file last on your stylesheets if you want to use these classes. They are failsafes from HTML5 Boilerplate for printing
+@import "vendor/print";
