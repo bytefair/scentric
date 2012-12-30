@@ -6,10 +6,9 @@
  * @since Scentric 0.1
  */
 ?>
-		<div id="sidebars" class="widget-area" role="complementary">
+		<div id="secondary" class="widget-area" role="complementary">
 			<?php do_action( 'before_sidebar' ); ?>
-			<div id="primary-sidebar" class="sidebar">
-				<?php if ( ! dynamic_sidebar( 'primary-sidebar-widgets' ) ) : ?>
+			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 				<aside id="search" class="widget widget_search">
 					<?php get_search_form(); ?>
@@ -32,13 +31,5 @@
 				</aside>
 
 			<?php endif; // end sidebar widget area ?>
-			</div>
-
-			<!-- secondary sidebar control - delete me if unneeded and undeclare from functions.php -->
-		  <?php if ( is_active_sidebar( 'secondary-sidebar-widgets' ) ) : ?>
-		    <div id="secondary-sidebar" class="sidebar">
-		      <?php dynamic_sidebar( 'secondary-sidebar-widgets' ); ?>
-		    </div>
-		  <?php endif; // end secondary-sidebar-widgets ?>
 
 		</div><!-- #secondary .widget-area -->

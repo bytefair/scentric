@@ -110,16 +110,20 @@ __v1.1__
 * Added jQuery 1.8.0 and had it queued by default. Change the line in functions.php if you want to use 1.7.2. It will be removed if there are few problems with jQuery 1.8.
 * Removed old Modernizr library.
 
-__v.1.1.1__
+__v1.1.1__
 
 * Updated Normalize.css to v1.0
 
-__v.1.2__
+__v1.2__
 
 * Updated Normalize.css to v1.0.1
 * Added Normalize.css 2.0.1
 * Updated to jQuery 1.8.2
 * Updated to Modernizr 2.6.2
+
+__v1.5__
+
+* Updated all the core files to reflect new code in the bases
 
 ## Planned Additions
 

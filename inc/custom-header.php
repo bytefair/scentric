@@ -25,11 +25,13 @@
  * Use feature detection of wp_get_theme() which was introduced
  * in WordPress 3.4.
  *
+ * @todo Rework this function to remove WordPress 3.4 support when WordPress 3.6 is released.
+ *
  * @uses scentric_header_style()
  * @uses scentric_admin_header_style()
  * @uses scentric_admin_header_image()
  *
- * @package _s
+ * @package Scentric
  */
 function scentric_custom_header_setup() {
 	$args = array(
@@ -45,9 +47,44 @@ function scentric_custom_header_setup() {
 
 	$args = apply_filters( 'scentric_custom_header_args', $args );
 
-	add_theme_support( 'custom-header', $args );
+	if ( function_exists( 'wp_get_theme' ) ) {
+		add_theme_support( 'custom-header', $args );
+	} else {
+		// Compat: Versions of WordPress prior to 3.4.
+		define( 'HEADER_TEXTCOLOR',    $args['default-text-color'] );
+		define( 'HEADER_IMAGE',        $args['default-image'] );
+		define( 'HEADER_IMAGE_WIDTH',  $args['width'] );
+		define( 'HEADER_IMAGE_HEIGHT', $args['height'] );
+		add_custom_image_header( $args['wp-head-callback'], $args['admin-head-callback'], $args['admin-preview-callback'] );
+	}
 }
 add_action( 'after_setup_theme', 'scentric_custom_header_setup' );
+
+/**
+ * Shiv for get_custom_header().
+ *
+ * get_custom_header() was introduced to WordPress
+ * in version 3.4. To provide backward compatibility
+ * with previous versions, we will define our own version
+ * of this function.
+ *
+ * @todo Remove this function when WordPress 3.6 is released.
+ * @return stdClass All properties represent attributes of the curent header image.
+ *
+ * @package Scentric
+ * @since Scentric 1.1
+ */
+
+if ( ! function_exists( 'get_custom_header' ) ) {
+	function get_custom_header() {
+		return (object) array(
+			'url'           => get_header_image(),
+			'thumbnail_url' => get_header_image(),
+			'width'         => HEADER_IMAGE_WIDTH,
+			'height'        => HEADER_IMAGE_HEIGHT,
+		);
+	}
+}
 
 if ( ! function_exists( 'scentric_header_style' ) ) :
 /**
@@ -55,7 +92,7 @@ if ( ! function_exists( 'scentric_header_style' ) ) :
  *
  * @see scentric_custom_header_setup().
  *
- * @since _s 1.0
+ * @since Scentric 1.0
  */
 function scentric_header_style() {
 
@@ -96,7 +133,7 @@ if ( ! function_exists( 'scentric_admin_header_style' ) ) :
  *
  * @see scentric_custom_header_setup().
  *
- * @since _s 1.0
+ * @since Scentric 1.0
  */
 function scentric_admin_header_style() {
 ?>
@@ -126,15 +163,15 @@ if ( ! function_exists( 'scentric_admin_header_image' ) ) :
  *
  * @see scentric_custom_header_setup().
  *
- * @since _s 1.0
+ * @since Scentric 1.0
  */
 function scentric_admin_header_image() { ?>
 	<div id="headimg">
 		<?php
-		if ( 'blank' == get_theme_mod( 'header_textcolor', HEADER_TEXTCOLOR ) || '' == get_theme_mod( 'header_textcolor', HEADER_TEXTCOLOR ) )
+		if ( 'blank' == get_header_textcolor() || '' == get_header_textcolor() )
 			$style = ' style="display:none;"';
 		else
-			$style = ' style="color:#' . get_theme_mod( 'header_textcolor', HEADER_TEXTCOLOR ) . ';"';
+			$style = ' style="color:#' . get_header_textcolor() . ';"';
 		?>
 		<h1><a id="name"<?php echo $style; ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<div id="desc"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></div>

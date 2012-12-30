@@ -1,7 +1,7 @@
 <?php
 /**
- * @package _s
- * @since _s 1.0
+ * @package Scentric
+ * @since Scentric 1.0
  */
 ?>
 

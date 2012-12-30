@@ -8,14 +8,14 @@
 
 get_header(); ?>
 
-		<section id="primary" class="site-content">
-			<div id="content" role="main">
+		<section id="primary" class="content-area">
+			<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
 					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'scentric' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				</header>
+				</header><!-- .page-header -->
 
 				<?php scentric_content_nav( 'nav-above' ); ?>
 
@@ -34,8 +34,8 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			</div><!-- #content -->
-		</section><!-- #primary .site-content -->
+			</div><!-- #content .site-content -->
+		</section><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

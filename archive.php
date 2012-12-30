@@ -10,8 +10,8 @@
 
 get_header(); ?>
 
-		<section id="primary" class="site-content">
-			<div id="content" role="main">
+		<section id="primary" class="content-area">
+			<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -65,9 +65,7 @@ get_header(); ?>
 								echo apply_filters( 'tag_archive_meta', '<div class="taxonomy-description">' . $tag_description . '</div>' );
 						}
 					?>
-				</header>
-
-				<?php rewind_posts(); ?>
+				</header><!-- .page-header -->
 
 				<?php scentric_content_nav( 'nav-above' ); ?>
 
@@ -92,8 +90,8 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			</div><!-- #content -->
-		</section><!-- #primary .site-content -->
+			</div><!-- #content .site-content -->
+		</section><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

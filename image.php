@@ -9,8 +9,8 @@
 get_header();
 ?>
 
-		<div id="primary" class="site-content image-attachment">
-			<div id="content" role="main">
+		<div id="primary" class="content-area image-attachment">
+			<div id="content" class="site-content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -34,10 +34,10 @@ get_header();
 							<?php edit_post_link( __( 'Edit', 'scentric' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
 						</div><!-- .entry-meta -->
 
-						<nav id="image-navigation">
+						<nav id="image-navigation" class="site-navigation">
 							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'scentric' ) ); ?></span>
 							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'scentric' ) ); ?></span>
-						</nav><!-- #image-navigation -->
+						</nav><!-- #image-navigation .site-navigation -->
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
@@ -49,7 +49,14 @@ get_header();
 									 * Grab the IDs of all the image attachments in a gallery so we can get the URL of the next adjacent image in a gallery,
 									 * or the first image (if we're looking at the last image in a gallery), or, in a gallery of one, just the link to that image file
 									 */
-									$attachments = array_values( get_children( array( 'post_parent' => $post->post_parent, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID' ) ) );
+									$attachments = array_values( get_children( array(
+										'post_parent' => $post->post_parent,
+										'post_status' => 'inherit',
+										'post_type' => 'attachment',
+										'post_mime_type' => 'image',
+										'order' => 'ASC',
+										'orderby' => 'menu_order ID'
+									) ) );
 									foreach ( $attachments as $k => $attachment ) {
 										if ( $attachment->ID == $post->ID )
 											break;
@@ -78,7 +85,7 @@ get_header();
 							<?php if ( ! empty( $post->post_excerpt ) ) : ?>
 							<div class="entry-caption">
 								<?php the_excerpt(); ?>
-							</div>
+							</div><!-- .entry-caption -->
 							<?php endif; ?>
 						</div><!-- .entry-attachment -->
 
@@ -105,7 +112,7 @@ get_header();
 
 			<?php endwhile; // end of the loop. ?>
 
-			</div><!-- #content -->
-		</div><!-- #primary .site-content -->
+			</div><!-- #content .site-content -->
+		</div><!-- #primary .content-area .image-attachment -->
 
 <?php get_footer(); ?>

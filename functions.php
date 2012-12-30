@@ -47,20 +47,25 @@ function scentric_setup() {
 	 */
 	require( get_template_directory() . '/inc/template-tags.php' );
 
-	/**
-	 * Custom functions that act independently of the theme templates
-	 */
-	//require( get_template_directory() . '/inc/tweaks.php' );
+  /**
+   * Custom functions that act independently of the theme templates
+   */
+  require( get_template_directory() . '/inc/extras.php' );
 
-	/**
-	 * Custom Theme Options
-	 */
-	//require( get_template_directory() . '/inc/theme-options/theme-options.php' );
+  /**
+   * Customizer additions
+   */
+  require( get_template_directory() . '/inc/customizer.php' );
+
+  /**
+   * WordPress.com-specific functions and definitions
+   */
+  //require( get_template_directory() . '/inc/wpcom.php' );
 
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on _s, use a find and replace
+	 * If you're building a theme based on Scentric, use a find and replace
 	 * to change 'scentric' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'scentric', get_template_directory() . '/languages' );
@@ -76,7 +81,7 @@ function scentric_setup() {
   ** theme supports, uncomment these lines to use any or all of them
   */
   //add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
-  //add_theme_support( 'post-thumbnails' );
+  add_theme_support( 'post-thumbnails' );
   add_theme_support( 'automatic-feed-links' );
   add_theme_support( 'custom-background' );
   add_editor_style(); //remember to make this sass file in the sass root
@@ -95,60 +100,10 @@ function scentric_widgets_init() {
   ** sidebar calls
   */
   register_sidebar( array(
-    'name' => __( 'Primary Sidebar', 'scentric' ),
-    'id' => 'primary-sidebar-widgets',
+    'name' => __( 'Sidebar', 'scentric' ),
+    'id' => 'sidebar-1',
     'description' => __( 'The primary sidebar', 'scentric' ),
     'before_widget' => '<aside id="%1$s" class="widget sidebar-widget %2$s">',
-    'after_widget' => '</aside>',
-    'before_title' => '<h1 class="widget-title">',
-    'after_title' => '</h1>',
-  ) );
-  // optional secondary sidebar, called in sidebar.php
-  register_sidebar( array(
-    'name' => __( 'Secondary Sidebar', 'scentric' ),
-    'id' => 'secondary-sidebar-widgets',
-    'description' => __( 'The secondary sidebar', 'scentric' ),
-    'before_widget' => '<aside id="%1$s" class="widget sidebar-widget %2$s">',
-    'after_widget' => '</aside>',
-    'before_title' => '<h1 class="widget-title">',
-    'after_title' => '</h1>',
-  ) );
-
-  /*
-  ** optional footer widget areas
-  */
-  register_sidebar( array(
-    'name' => __( 'Primary Footer', 'scentric' ),
-    'id' => 'primary-footer-widgets',
-    'description' => __( 'The primary footer', 'scentric' ),
-    'before_widget' => '<aside id="%1$s" class="widget footer-widget %2$s">',
-    'after_widget' => '</aside>',
-    'before_title' => '<h1 class="widget-title">',
-    'after_title' => '</h1>',
-  ) );
-  register_sidebar( array(
-    'name' => __( 'Secondary Footer', 'scentric' ),
-    'id' => 'secondary-footer-widgets',
-    'description' => __( 'The secondary footer', 'scentric' ),
-    'before_widget' => '<aside id="%1$s" class="widget footer-widget %2$s">',
-    'after_widget' => '</aside>',
-    'before_title' => '<h1 class="widget-title">',
-    'after_title' => '</h1>',
-  ) );
-  register_sidebar( array(
-    'name' => __( 'Tertiary Footer', 'scentric' ),
-    'id' => 'tertiary-footer-widgets',
-    'description' => __( 'The tertiary footer', 'scentric' ),
-    'before_widget' => '<aside id="%1$s" class="widget footer-widget %2$s">',
-    'after_widget' => '</aside>',
-    'before_title' => '<h1 class="widget-title">',
-    'after_title' => '</h1>',
-  ) );
-  register_sidebar( array(
-    'name' => __( 'Quaternary Footer', 'mens-tk' ),
-    'id' => 'quaternary-footer-widgets',
-    'description' => __( 'The quaternary footer', 'scentric' ),
-    'before_widget' => '<aside id="%1$s" class="widget footer-widget %2$s">',
     'after_widget' => '</aside>',
     'before_title' => '<h1 class="widget-title">',
     'after_title' => '</h1>',
@@ -161,8 +116,6 @@ add_action( 'widgets_init', 'scentric_widgets_init' );
  * Enqueue scripts and styles
  */
 function scentric_scripts() {
-	global $post;
-
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	/* loads local copy of Modernizr */
@@ -202,15 +155,5 @@ add_action( 'wp_enqueue_scripts', 'scentric_scripts' );
 ** Removes WordPress version number from site
 */
 remove_action( 'wp_head', 'wp-generator' );
-
-
-/*
-** Calls to custom-types.php are below
-*/
-// example:
-require 'inc/custom-types.php';
-//add_post_type( 'singular noun', array( 'taxonomies' => array() ) );
-//add_taxonomy( 'taxon', 'singular_noun', array( 'hierarchical' => true ) ); //remember to use machine name
-
 
 ?>
