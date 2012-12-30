@@ -125,9 +125,7 @@ function scentric_scripts() {
   ** replace the default jQuery call, you might want to use Google's CDN for production
   */
   wp_deregister_script( 'jquery' );
-  // Uncomment this next line to use jQuery 1.7.2 and delete or comment out the line after that
-  // wp_register_script('jquery', get_template_directory_uri().'/js/vendor/jquery-1.7.2.js', array(), '1.7.2', false );
-  wp_register_script('jquery', get_template_directory_uri().'/js/vendor/jquery-1.8.2.js', array(), '1.8.2', false );
+  wp_register_script('jquery', get_template_directory_uri().'/js/vendor/jquery-1.8.3.js', array(), '1.8.3', false );
   wp_enqueue_script('jquery');
 
 	/* jQuery plugins and scripts load */
